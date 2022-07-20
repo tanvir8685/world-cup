@@ -7,10 +7,16 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color:#F3F1FF;
 
-
+margin: 0;
+padding:0
 }
 
-main{
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* main{
 
 
 
@@ -18,7 +24,7 @@ main{
     flex-direction: column;
     align-items: center;
     
-}
+} */
 /* ---------upper part--------- */
 h1{
     font-size: 40px;
@@ -51,18 +57,25 @@ h1{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.container{
+/* .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 
 }
-/* lower part left side */
-.button-area{
-    border-radius: 20px;
-    height: 40%;
-    background-color: black;
-    width: 40%; 
 
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+} */
+
+/* lower part left side */
+.button-area {
+    border-radius: 20px;
+    /* height: 40%; */
+    background-color: black;
+    /* width: 40%; */
+    margin-right: 30px;
 }
 
 
@@ -121,4 +134,17 @@ h1{
     gap: 24px;
 
 
+}
+
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    width: 30%;
+}
+
+.right-side {
+    width: 70%;
 }
