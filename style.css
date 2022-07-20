@@ -1,0 +1,33 @@
+/* ----------common part-------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+/* ---------upper part--------- */
+h1{
+    font-size: 40px;
+    color: white;
+
+}
+p{
+    color: white;
+}
+
+.black{
+    display: flex;
+    background-color:black;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.button{
+    
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 3px;
+}
