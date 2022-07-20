@@ -28,12 +28,14 @@ h1{
     color: white;
 }
 
+
 .black{
     display: flex;
     background-color:black;
     padding: 20px;
     border-radius: 30px;
 }
+
 
 .button{
     
@@ -52,11 +54,48 @@ h1{
 .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+
 }
+/* lower part left side */
+.button-area{
+    border-radius: 20px;
+    height: 40%;
+    background-color: black;
+    width: 40%; 
+
+}
+
+
+.btn{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color:white;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    height: 80px;
+}
+ .btn-red{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    background-color:red;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    height: 80px;
+} 
+
+/* lowwer part rigt side--- */
+
+
 .right-side{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+    
 }
 .player img{
         width: 100%;}
