@@ -134,9 +134,9 @@ h1{
 }
 /* footer desing */
 .footer-black{
-    height: 300px;
+    height: 220px;
     background-color: black;
-    padding-top: 50px;
+    
     text-align: center;
 }
 .ending{
@@ -179,6 +179,12 @@ h1{
 
     .right-side{
         grid-template-columns: repeat(1,1fr);
+    }
+    .ending{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1px;
+        
     }
 
 
