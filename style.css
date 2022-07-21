@@ -2,13 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@1,500&family=Poppins:ital,wght@0,500;1,400&display=swap');
 /* top players style */
+*{
+    margin: 0;
+    padding:0;
+}
+
 body{
     font-family: 'Arimo', sans-serif;
     font-family: 'Poppins', sans-serif;
     background-color:#F3F1FF;
 
-margin: 0;
-padding:0
+
 }
 
 .container{
@@ -67,6 +71,7 @@ h1{
 .video-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -78,9 +83,9 @@ h1{
 } 
 .button-area {
      border-radius: 20px; 
-    height: 40%; 
+    /*min-height: 40%; */
     background-color: black;
-     width: 80%; 
+     /*width: 95%; */
     margin-right: 30px;
 }
 
@@ -91,7 +96,7 @@ h1{
     padding: 10px;
     background-color:white;
     border-radius: 8px;
-    width: 250px;
+    width: 93%;
     margin: 10px;
     height: 80px;
 }
@@ -102,7 +107,7 @@ h1{
     padding: 10px;
     background-color:red;
     border-radius: 8px;
-    width: 250px;
+    width: 93%;
     margin: 10px;
     height: 80px;
 } 
@@ -142,20 +147,86 @@ h1{
 
 
 }
-@media screen and(max-width:576) {
-    .container{
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .news{
         width: 100%;
     }
-    .black ,.right-side{
-       
-        grid-template-columns: repeat(1,1fr); 
+
+    .images{
+        width: 100%;
     }
-    .news ,.images, .player, .footer-black{
-        flex-direction: column;
+
+    .container{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
     }
-    /* .right-side{
+
+    .right-side,
+    .left-side{
+        width: 90%;
+        margin: 10px;
+
+    }
+    .lower-part{
+        margin: 0;
+    }
+
+    .right-side{
         grid-template-columns: repeat(1,1fr);
-    } */
-    
+    }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .right-side,
+    .left-side{
+        width: 90%;
+        margin: 10px;
+
+    }
+
+    .right-side{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .button-area{
+        margin-right: 0px;
+    }
+
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left-side{
+        width: 35%;
+        margin-left: 3%;
+
+    }
+
+    .right-side{
+        width: 58%;
+
+    }
+
+    .right-side{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .right-side{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
